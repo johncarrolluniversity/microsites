@@ -1,0 +1,95 @@
+@charset "UTF-8";@media all and (max-width:1215px){#header{height:600px;}
+#headerWrap{background-size:900px;}
+#infoWrap{width:0;height:100%;margin:0 auto;}
+#logo{width:600px;position:absolute;top:0;left:0;}
+#lead-in{width:320px;height:330px;top:0;left:0;}
+#header ul{width:200px;height:30px;bottom:0;left:0;}
+#ribbon{width:auto;padding:25px 75px 25px 75px;}
+#ribboncont{width:auto;}
+#content ul{margin:0 50px 0 75px;}
+#grid{width:950px;}
+#grid .back span ul.buttons{height:3vw;}
+#grid .back span ul.buttons li{font-size:1vw;line-height:3vw;}
+#grid li.click .back span.l{font-size:12px;line-height:14px;}
+#wrapper{width:auto;margin:0 50px 0 75px;}
+#header li{font-size:16px;}
+#ribbon h1{font-size:22px;line-height:29px;}
+#closing h1{font-size:24px;}
+#closing h2{font-size:21px;line-height:24px;}
+#right h1{font-size:20px;}
+}
+@media all and (max-width:1060px){#headerWrap{background-size:cover;background-position:5vw top;}
+#ribboncont{width:auto;}
+#grid{width:auto;}
+#right ul.buttons li{font-size:12px;}
+#right .flip-clock-wrapper ul li a div div.inn{font-size:35px;line-height:45px;}
+}
+@media all and (max-width:1015px){#headerWrap{width:100%;background:linear-gradient(to right, #ffffff, transparent 80%), url(../images/header3.jpg) no-repeat;background:-webkit-linear-gradient(left, #ffffff, transparent 80%), url(../images/header3.jpg) no-repeat;background:-o-linear-gradient(right, transparent 20%, #ffffff), url(../images/header3.jpg) no-repeat;background:-moz-linear-gradient(right, transparent 20%, #ffffff), url(../images/header3.jpg) no-repeat;background-position:75% 0;}
+.grid-sizer, #grid li.click{width:48%;margin:1%;}
+#grid li.click{padding-top:48%;}
+#grid li.click .back span{font-size:1.9vw;line-height:2.25vw;}
+#grid li.click .back span.l{font-size:1.5vw;line-height:1.75vw;}
+#grid li.click .back span ul.list.list{margin:3% 0 0 0;}
+#grid li.click .back span ul.list li{margin:-3% 0 0 6%;}
+#grid .back span ul.buttons{height:5vw;}
+#grid .back span ul.buttons li{font-size:2vw;line-height:5vw;}
+#closing h1{font-size:2.5vw;}
+#closing h2{font-size:2vw;line-height:2.28vw;}
+#right h1{font-size:1.9vw;}
+}
+@media all and (max-width:790px){#header{height:700px;}
+#headerWrap{background:linear-gradient(to right, #ffffff 40%, transparent 80%), url(../images/header3.jpg) no-repeat;background:-webkit-linear-gradient(left, #ffffff 40%, transparent 80%), url(../images/header3.jpg) no-repeat;background:-o-linear-gradient(right, transparent 20%, #ffffff 60%), url(../images/header3.jpg) no-repeat;background:-moz-linear-gradient(right, transparent 20%, #ffffff 60%), url(../images/header3.jpg) no-repeat;background-size:1100px auto;background-position:75% 0;}
+#logo{width:500px;margin:50px 0 0 -10px;}
+#lead-in{width:235px;height:350px;margin:200px 0 0 50px;}
+#header ul.buttons{width:120px;height:200px;bottom:0;left:0;}
+#header ul.buttons li{width:100%;margin:0 0 12.5% 0;height:25%;max-height:40px;background-size:contain;float:left;}
+#ribbon{padding:25px 50px;}
+#content{margin:50px auto;}
+#content ul{margin:0 50px;}
+#grid li.click .back span{width:90%;}
+#wrapper{margin:0 50px;padding:0;}
+#closing, #right{width:100%;float:right;height:auto;}
+#closing{padding:50px 0;}
+#right{height:350px;}
+#header li{font-size:14px;line-height:40px;}
+#ribbon h1{font-size:20px;line-height:25.6px;}
+#closing h1{font-size:24px;}
+#closing h2{font-size:21px;line-height:24px;}
+#right h1{font-size:3.3vw;line-height:4vw;}
+#right #clock ul.labels li{font-size:15px;line-height:20px;}
+#right ul.buttons li{font-size:16px;line-height:40px;}
+#right .flip-clock-wrapper ul li a div div.inn{font-size:40px;line-height:50px;}
+}
+@media all and (max-width:510px){#header{height:110vw;}
+#headerWrap{background:linear-gradient(to right, #ffffff 50%, transparent 80%), url(../images/header3.jpg) no-repeat;background:-webkit-linear-gradient(left, #ffffff 50%, transparent 80%), url(../images/header3.jpg) no-repeat;background:-o-linear-gradient(right, transparent 20%, #ffffff 50%), url(../images/header3.jpg) no-repeat;background:-moz-linear-gradient(right, transparent 20%, #ffffff 50%), url(../images/header3.jpg) no-repeat;background-size:170vw auto;background-position:-55vw 0;}
+#logo{width:90vw;top:-7vw;}
+#lead-in{top:30vw;left:10vw;margin:0;height:40vw;width:50vw;}
+#header ul.buttons{width:25vw;height:6vw;}
+#header ul.buttons li{height:7vw;}
+#ribbon{padding:25px 10vw;}
+#content{width:100%;margin:10vw auto;}
+#content ul{margin:0 10vw;}
+.grid-sizer, #grid li.click{width:100%;margin:2% 0;}
+#grid li.click{padding-top:100%;}
+#grid li.click .thumb{width:100%;}
+#grid .cardflip{height:10vw;width:10vw;}
+#grid .back span ul.buttons{height:7vw;}
+#grid .back span ul.buttons li{font-size:3vw;line-height:7vw;}
+#wrapper{padding:0;margin:0 10vw;}
+#closing{padding:10vw 0;}
+#right{padding:0 0 10vw 0;height:90vw;}
+#clock{max-height:35vw;}
+#right ul.buttons{height:30vw;}
+#right ul.buttons li{float:none;margin-bottom:10px;min-width:75px;height:7vw;}
+#right ul.buttons li:last-child{margin-bottom:0;}
+#header li{font-size:3vw;line-height:8vw;}
+#ribbon h1{font-size:4.25vw;line-height:5.44vw;}
+#ribbon h2{font-size:3vw;line-height:3.25vw;}
+#grid li.click .back span{font-size:3.75vw;line-height:4vw;}
+#grid li.click .back span.l{font-size:3.0vw;line-height:3.25vw;}
+#closing h1{font-size:5vw;line-height:7vw;}
+#closing h2{font-size:4vw;line-height:4.57vw;}
+#right .flip-clock-wrapper ul li a div div.inn{font-size:5vmin;line-height:9vmin;}
+#right #clock ul.labels li{font-size:3.5vw;line-height:5vw;}
+#right ul.buttons li{font-size:2.5vw;line-height:7vw;}
+}

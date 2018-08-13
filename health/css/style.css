@@ -1,0 +1,924 @@
+@charset "UTF-8";
+
+/******************************/
+/*	John Carroll University   */
+/*							  */
+/*	2016, Alyssa Myers        */
+/*	www.alyssanmyers.com      */
+/******************************/
+
+body
+{
+	background-color:#ffffff;
+	padding:0;
+	margin:0;
+}
+
+#container
+{
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+}
+
+/*****************/
+/* HEADER STYLES */
+/*****************/
+
+#header
+{
+    background-color: #ffffff;
+    background: url(../images/healthcare-leanne.jpg) no-repeat;
+    background-size: 110% auto;
+    position: relative;
+    width: 100%;
+    height: 675px;
+    padding: 0;
+    margin: 0;
+}
+
+#headerWrap
+{
+	height:100%;
+	margin:0 auto;
+	width:100%;
+}
+
+#infoWrap
+{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+}
+
+#logo
+{
+	height:auto;
+	width:600px;
+	position:absolute;
+	margin:55px 0px 0px 15px;
+}
+
+#logo img
+{
+	height:auto;
+	width:100%;
+}
+
+#lead-in
+{
+	height:415px;
+	width:450px;
+	position:absolute;
+	margin:225px 0px 0px 110px;
+}
+
+#quote
+{
+	width:100%;
+	height:80%;
+	background:url(../images/quote.png) no-repeat;
+	background-size:contain;
+}
+
+/*#header ul.buttons
+{
+	list-style:none;
+	width:300px;
+	height:40px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	margin:0;
+}
+
+ul.buttons a
+{
+	color:inherit;
+	display:block;
+}
+
+#header ul.buttons li
+{
+	height:100%;
+	width:40%;
+	float:left;
+	margin-right:10%;
+	position:relative;
+	transition:box-shadow 200ms ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#header ul.buttons li:first-child
+{
+	background-color:#00a5b8;
+}
+
+#header ul.buttons li:last-child
+{
+	background-color:#003662;
+}
+
+#header li:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}*/
+#header ul.buttons
+{
+	list-style:none;
+	width:450px;
+	height:40px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	margin:0;
+}
+
+ul.buttons a
+{
+	color:inherit;
+	display:block;
+}
+
+#header ul.buttons li
+{
+	height:100%;
+	width:30%;
+	float:left;
+	margin-right:5%;
+	position:relative;
+	background-color:#00a5b8;
+	transition:box-shadow 200ms ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#header ul.buttons li:first-child
+{
+	background-color:#e9b71f;
+	color:#000000;
+}
+
+#header ul.buttons li:last-child
+{
+	background-color:#003662;
+	margin:0;
+}
+
+#header li:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+/******************************/
+/* BODY COPY IN RIBBON STYLES */
+/******************************/
+
+#ribbon
+{
+	background-color:#00a5b8;
+	width:100%;
+	height:250px;
+	margin:0;
+	position:relative;
+}
+
+#ribbon .wrap
+{
+	height:65%;
+	width:1050px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: -70px;
+}
+
+/******************************/
+/* BODY CONTENT / GRID STYLES */
+/******************************/
+
+#contentwrapper
+{
+	position:relative;
+}
+
+#content
+{
+	background-color:#ffffff;
+	width:100%;
+	height:2500px;
+	position:absolute;
+	margin:0 auto;
+	
+}
+
+#content ul 
+{	
+	list-style:none;
+	padding:0;
+	margin:0 auto;
+}
+
+#grid
+{
+	width:75% !important;
+	height:2000px;
+	margin: auto;
+	position: absolute;
+	top: 0; left:0; bottom: 0; right: 0;
+}
+
+#grid li.click
+{
+	width:32.65% !important;
+	height:400px;
+	float:left;
+	position:relative;
+	cursor:pointer !important;
+	cursor:hand;
+	margin:0 1% 1% 0;
+}
+
+#grid li:nth-child(3n) 
+{
+	margin:0 0 1% 0;
+}
+
+#grid .thumb
+{
+    box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+    display:inline-block;
+    line-height:0;
+	height:auto;
+    width:100%;
+    transition:box-shadow 200ms ease-out;
+    border-radius:0;
+    margin-bottom:1rem;
+	position:relative;
+}
+
+#grid .thumb:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.50), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#grid li.click a
+{
+	color:#00a5b8;	
+	text-decoration: none;
+    border-bottom: 1px solid #00a5b8;
+}
+
+#grid li.click a:hover
+{
+	color:#ffffff !important;
+	border-bottom:none !important;
+}
+
+#grid li.click .back span
+{
+	position:absolute;	
+	z-index:1;
+	width:80% !important;
+	right:0;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+
+/* double tile styles */
+
+#grid li.double .back span ul
+{
+	list-style:square;
+}
+
+#grid li.double .back span ul li
+{
+	margin-left:7%;
+	color:#e9b71f;
+}
+
+#grid li.double .back span ul li a
+{
+	margin-left:-5%;	
+	padding-left:5%;
+	border:none;
+	text-decoration:underline;
+}
+
+/* button in tile */
+
+#grid .back span ul.buttons
+{
+	list-style:none;
+	width:95%;
+	height:40px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	margin:0;
+}
+
+#grid .back span ul.buttons a
+{
+	color:inherit;
+	display:block;
+}
+
+#grid .back span ul.buttons li
+{
+	height:100%;
+	width:40%;
+	background-color:#00a5b8;
+	position:relative;
+	margin:0 auto;
+	transition:box-shadow 200ms ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#grid .back span ul.buttons li:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+/* animation */
+.click .front, .click .back
+{
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+.click .back
+{
+	-webkit-transform: rotateY(-180deg);
+    		transform: rotateY(-180deg);
+}
+
+/* click effect */
+.click.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.click.flipped .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+/************************/
+/* FOOTER / CLOCK STYLES*/
+/************************/
+
+#footer 
+{
+	background-color:#00a5b8;
+	height:475px;
+	width:100%;
+}
+
+#wrapper
+{
+	background-color:#f0cb69;
+	height:350px;
+	width:100%;
+	position:relative;
+}
+
+#countdown
+{
+	width:1150px;
+	height:100%;
+	position:absolute;
+	left:0; right:0;
+	margin:auto;
+}
+
+#closing, #right
+{
+	width:45%;
+	height:75%;
+	position: absolute;
+	top:0; bottom:0;
+	margin:auto;
+	margin: auto 15px ;	
+}
+
+#right
+{
+	height:85%;
+	width:45%;
+	right:0;
+}
+
+#clock
+{
+	width:100%;
+	height:55%;
+	margin:3% 0 0 0;
+	position:relative;
+	background-color:#000000;
+  	background-image: radial-gradient(#414143,#252625);
+}
+
+#clockWrapper
+{
+	height:30%;
+	width:90%;
+	position:absolute;
+	margin: auto;
+	top:0; 
+	bottom:20%;
+	right:2.5%; 
+	left:0;
+}
+
+/*****************************/
+/* PERSONAL FLIPCLOCK STYLES */
+/*****************************/
+
+/* removes link from the numbers */
+#clockWrapper a
+{
+	pointer-events: none;
+   	cursor: default;
+}
+
+#right .flip-clock-wrapper ul
+{
+	width:8%;
+	height:100%;
+	margin: 0 1% 0 1%;
+}
+
+/* horizontal line for numbers */
+.flip-clock-wrapper ul li a div.down
+{
+	border-top:1px solid #000000;
+}
+
+/* countdown numbers */
+#right .flip-clock-wrapper ul li a div div.inn
+{
+	font-family:"Akzidenz Grotesk Bold";
+	font-size:40px;
+	line-height:50px;
+
+	color:#00d5ff;
+	background: url(../images/countdown_bg.png) #2a2a2a no-repeat top;
+	background-size:100% 100%;
+	border:1px solid #000000;
+    box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75),
+				0px -2px 1px 0px rgba(255,255,255,0.15) inset,
+				0px 2px 1px 0px rgba(255,255,255,0.25) inset;
+}
+
+/* hiding the ':' */
+#right .flip-clock-divider 
+{
+	height:100%;
+	visibility:hidden;
+	width:2.5%;	
+}
+
+/***************************/
+/* LABELS UNDERNEATH CLOCK */
+/***************************/
+
+#right #clock ul.labels
+{
+	width:90%;
+	height:20%;
+	position:absolute;
+	bottom:20%;
+	list-style:none;
+	padding:0;
+	margin:0 auto;
+	right:0; 
+	left:0;
+}
+
+#right #clock ul.labels li
+{
+	float:left;
+	width:18.5%;
+	height:100%;
+	margin:0 0 0 4%;
+}
+
+#right #clock ul.labels li:first-child
+{
+	width:28%;
+	margin:0 0 0 2.5%;	
+}
+
+/*************************/
+/* VISIT / APPLY BUTTONS */
+/*************************/
+
+#right ul.buttons
+{
+	list-style:none;
+	width:85%;
+	height:20%;
+	padding:0;
+	position:absolute;
+	right:0; left:0; bottom:0;
+	margin:auto;
+}
+
+#right ul.buttons li
+{
+	height:100%;
+	width:45%;
+	float:left;
+	position:relative;
+	transition:box-shadow 200ms ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#right ul.buttons li:first-child
+{
+	margin-right:10%;
+	background-color:#00a5b8;
+}
+
+#right ul.buttons li:last-child
+{
+	background-color:#003662;
+}
+
+#right .buttons li:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+/***************/
+/* TYPE STYLES */
+/***************/
+
+@font-face 
+{
+    font-family:'Helvetica Neue';
+	src:url(../fonts/HelveticaNeue.ttf);
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Black';
+	src:url(../fonts/Helvetica-95Black.ttf);	
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Thin';
+	src:url(../fonts/HelveticaNeue-Thin.ttf);
+}
+
+@font-face 
+{
+    font-family:'Absara OT Bold';
+	src:url(../fonts/AbsaraOT-Bold.otf);
+}
+
+@font-face
+{
+	font-family:"Akzidenz Grotesk Bold";
+	src: url(../fonts/Akzidenz-Grotesk-Bold.ttf);
+}
+
+@font-face
+{
+	font-family:	"Gotham Book";
+	src:url(../fonts/GothamBook.ttf);
+}
+
+#header li
+{
+	font-family:'Absara OT Bold';
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	line-height:43px;
+}
+
+#ribbon h1
+{
+	font-family:'Helvetica Neue';
+	font-size:23px;
+	color:#ffffff;
+	letter-spacing:0px;
+	line-height:30px;
+}
+
+#ribbon h2
+{
+	font-family:'Helvetica Neue';
+	font-size:12px;
+	color:#ffffff;
+	letter-spacing:0px;
+	line-height:15px;
+}
+
+#grid li.click .back span
+{
+	font-family:'Gotham Book';
+	color:#ffffff;
+	font-size:1.25vw;
+	line-height:1.5vw;
+	font-weight:bold;
+}
+
+#closing h1
+{
+	font-family:'Helvetica Neue Black';
+	color:#0a3f67;
+	font-size:29px;
+	line-height:32px;
+	margin:0;
+	font-weight:bold;
+}
+
+#closing h2
+{
+	font-family:'Helvetica Neue';
+	font-size:27px;
+	line-height:32px;
+	letter-spacing:1px;
+	margin:5px 0 0 0;
+	font-weight:bold;
+}
+
+#right h1
+{
+	font-family:'Helvetica Neue Black';
+	color:#0000;
+	font-size:25px;
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+}
+
+#right #clock ul.labels li
+{
+	font-family:'Helvetica Neue Thin';
+	text-align:center;
+	font-size:20px;
+	line-height:25px;
+	text-transform:uppercase;
+	color:#ffffff;
+	letter-spacing:1px;
+}
+
+#right ul.buttons li
+{
+	font-family:'Absara OT Bold';
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:22px;
+	line-height:60px;
+}
+
+#grid .back span ul.buttons li
+{
+	font-family:'Absara OT Bold';
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:12px;
+	line-height:40px;
+}
+
+
+
+
+/* NEW FOOTER RACHEL */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* footer styles */
+
+#outer-footer-wrapper {
+    width: 100%;
+    background-color:#f0cb69;
+    margin: 0;
+}
+
+#footer-wrapper {
+    width: 100vw;
+    max-width: 50em;
+    margin:0 auto;
+    background-color:#f0cb69;
+}
+
+#footer-left, #footer-right {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+#footer-left h1 {
+    font-family: 'Helvetica Neue Black';
+    color:#0a3f67;
+    font-size: 1.5em;
+}
+
+#footer-left h2 {
+    font-family: 'Helvetica Neue';
+    color:#0a3f67;
+    font-size: 1em;
+}
+
+@media (min-width: 48em) {
+
+    #footer-wrapper {
+        display: table;
+        margin: 0 auto;
+        width: 100vw;
+        vertical-align: top;
+    }
+
+    #footer-left, #footer-right {
+        display: table-cell;
+        padding: 1rem;
+        vertical-align: top;
+    }
+
+    #footer-right {
+        width: 50%;
+        height: 3rem;
+    }
+
+    #footer-left {
+        width: 50%;
+        height: 3rem;
+        padding-bottom: 1rem;
+        vertical-align: top;
+    }
+}
+
+/* buttons */
+
+.footer-buttons{
+    list-style:none;
+    width:100%;
+    height:40px;
+    padding:0;
+    margin:25px 0 0 0;
+    text-align: center;
+    color: #FFF;
+    line-height:40px;
+}
+
+ul.footer-buttons li{
+    height:100%;
+    max-height:40px;
+    min-width:100px;
+    width:30%;
+    float:left;
+    position:relative;
+    transition:box-shadow 200ms ease-out;
+    box-shadow:1px 1px 1px 1px rgba(10, 10, 10, 0.75), 2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+    margin-right:5%;
+    background-color:#00a5b8;
+}
+
+ul.footer-buttons li:first-child{
+    background-color:#e9b71f;
+    color:#000000;
+}
+
+ul.footer-buttons li:last-child{
+    background-color:#003662;
+    margin:0;
+}
+
+.footer-buttons li:hover{
+    bottom:1px;
+    right:1px;
+    box-shadow:2px 2px 1px 1px rgba(10, 10, 10, 0.75), 2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+.footer-buttons a{
+    font-family:'Absara OT Bold';
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-buttons a:visited{
+    font-family:'Absara OT Bold';
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Form Styles */
+
+
+.form_label{
+    font-family: 'Helvetica Neue';
+    font-size: .9em;
+    color: #0a3f67;
+}
+
+.form_question{
+    font-size: 1em;
+}
+
+.form_pages{
+
+    font-family: 'Helvetica Neue';
+    font-size: .9em;
+    color: #0a3f67;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;}
+
+.form_responses {
+    padding-bottom: 5px;
+    height: 25px;
+}
+
+/* term of entry */
+
+#form_question_d8fb8926-e330-476f-84fa-7bfc4df999d6{
+    width:60%;
+    font-size: .85em;
+}
+
+/* birthdate */
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_m{
+    width:90px;
+    font-size: .85em;
+}
+
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_d{
+    width:55px;
+    font-size: .85em;
+}
+
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_y{
+    width:65px;
+    font-size: .85em;
+}
+
+/* academic interests */
+#form_60da47ab-f08a-4a97-a5d6-7d9cb7066190{
+    float: left;
+}
+
+/* button */
+.action button {
+    float: left;
+    padding: 5px;
+    border: 1px solid #003662;
+    color: #003662;
+    width: 75px;
+    text-align: center;
+    font-size: .9em;
+}
+
+/* field heights */
+input[type="email"]{
+    height: 30px;
+}
+
+input[type="text"]{
+    height: 30px;
+}
+
+
+@font-face{font-family:'Helvetica Neue';src:url(../fonts/HelveticaNeue.ttf);}
+@font-face{font-family:'Helvetica Neue Black';src:url(../fonts/Helvetica-95Black.ttf);}
+@font-face{font-family:'Helvetica Neue Thin';src:url(../fonts/HelveticaNeue-Thin.ttf);}
+@font-face{font-family:'Absara OT Bold';src:url(../fonts/AbsaraOT-Bold.otf);}
+@font-face{font-family:"Akzidenz Grotesk Bold";src:url(../fonts/Akzidenz-Grotesk-Bold.ttf);}
+@font-face{font-family:"Gotham Book";src:url(../fonts/GothamBook.ttf);}

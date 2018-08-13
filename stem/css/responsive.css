@@ -1,0 +1,549 @@
+@charset "UTF-8";
+
+/******************************/
+/*	John Carroll University   */
+/*							  */
+/*	2016, Alyssa Myers        */
+/*	www.alyssanmyers.com      */
+/******************************/
+
+@media all and (max-width: 1215px) 
+{	
+	/* HEADER STYLES */
+	
+	#header
+	{
+		height:600px;
+	}
+	
+	#headerWrap
+	{
+		background-size:900px;	
+	}
+	
+	#infoWrap
+	{
+		width:0;
+		height:100%;
+		margin:0 auto;
+	}
+	
+	#logo
+	{
+		width:600px;
+		position:absolute;
+		top:0; left:0;
+	}
+	
+	#lead-in
+	{
+		width:320px;
+		height:330px;
+		top:0; left:0;
+	}
+	
+	#header ul
+	{
+		width:200px;
+		height:30px;
+		bottom:0;
+		left:0;
+	}
+	
+	/* BODY COPY STYLES */
+
+	#ribboncont
+	{
+		width:950px;
+		margin:0;
+	}
+
+	/* GRID STYLES */
+	
+	#content ul
+	{
+		margin:0 50px 0 75px;
+	}
+	
+	#grid
+	{
+		width:950px;
+	}
+	
+	#grid .back span ul.buttons
+	{
+		height:3vw;
+	}
+	
+	#grid .back span ul.buttons li
+	{
+		font-size:1vw;
+		line-height:3vw;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#wrapper
+	{
+		width:auto;
+		margin:0 50px 0 75px;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:16px;
+	}
+	
+	#ribbon h1
+	{
+		font-size:22px;
+		line-height:29px;
+	}
+	
+	#closing h1
+	{
+		font-size:24px;
+	}
+	
+	#closing h2
+	{
+		font-size:21px;
+		line-height:24px;
+	}
+	
+	#right h1
+	{
+		font-size:20px;
+	}
+}
+
+@media all and (max-width: 1060px) 
+{	
+	#headerWrap
+	{
+		background-size:cover;
+		background-position: 5vw top;
+	}
+	
+	#ribboncont
+	{
+		width:auto;
+	}
+	
+	#grid
+	{
+		width:auto;
+	}
+	
+	#right ul.buttons li
+	{
+		font-size:12px;
+	}
+	
+	#right .flip-clock-wrapper ul li a div div.inn
+	{
+		font-size:35px;
+		line-height:45px;
+	}	
+}
+
+/* two column grid and begins stacking footer*/
+@media all and (max-width: 1015px) 
+{	
+	#headerWrap
+	{
+		width:100%;
+	}
+	
+	/* GRID STYLES */
+	
+	#grid li.click
+	{
+		width:48% !important;
+		padding-top:49.5%;
+		margin:1%;
+	}
+
+	#grid li.click .back span
+	{
+		font-size:1.9vw;
+		line-height:2.25vw;
+	}
+	
+	#grid li.click .back span.l
+	{
+		font-size:1.75vw;
+		line-height:2vw;
+	}
+	
+	#grid li.click .back span ul.list.list
+	{
+		margin:3% 0 0 0;
+	}
+	
+	#grid li.click .back span ul.list li
+	{
+		margin:-3% 0 0 6%;
+	}
+	
+	#grid .back span ul.buttons
+	{
+		height:5vw;
+	}
+	
+	#grid .back span ul.buttons li
+	{
+		font-size:2vw;
+		line-height:5vw;
+	}
+	
+	#closing h1
+	{
+		 font-size:2.5vw;
+	}
+	
+	#closing h2
+	{
+		font-size:2vw;
+		line-height:2.28vw;
+	}
+	
+	#right h1
+	{
+		font-size:1.9vw;
+	}
+}
+
+/* moves person down */
+@media all and (max-width: 790px)
+{
+	/* HEADER STYLES */
+	
+	#header
+	{
+		height:700px;
+	}
+	
+	#headerWrap
+	{
+		background-size:1100px auto;
+		background-position:50% 0;
+	}
+	
+	#logo
+	{
+		width:500px;
+		margin:50px 0 0 -10px;
+	}
+	
+	#lead-in
+	{
+		width:235px;
+		height:350px;
+		margin:200px 0 0 50px;
+	}
+	
+	#header ul.buttons
+	{
+		width:120px;
+		height:200px;
+		bottom:0;
+		left:0;
+	}
+	
+	#header ul.buttons li
+	{
+		width:100%;
+		margin:0 0 12.5% 0;
+		height:25%;
+		max-height:40px;
+		background-size:contain;
+		float:left;
+	}
+	
+	#ribbon
+	{
+		padding:25px 50px;
+	}
+	
+	/* GRID STYLES */
+	
+	#content
+	{
+		margin:50px auto;
+	}
+	
+	#content ul
+	{
+		margin:0 50px;
+	}
+	
+	#grid li.click .back span
+	{
+		width:90%;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#wrapper
+	{
+		margin:0 50px;
+		padding:0;
+	}
+	
+	#closing, #right
+	{
+		width:100%;
+		float:right;
+		height:auto;
+	}
+	
+	#closing
+	{
+		padding:50px 0;
+	}
+	
+	#right
+	{
+		height:350px;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:14px;
+		line-height:40px;
+	}
+	
+	#ribbon h1
+	{
+		font-size:20px;
+		line-height:25.6px;
+	}
+
+	#closing h1
+	{
+		font-size:24px;
+	}
+	
+	#closing h2
+	{
+		font-size:21px;	
+		line-height:24px;
+	}
+	
+	#right h1
+	{
+		font-size:3.3vw;
+	}
+	
+	#right #clock ul.labels li
+	{
+		font-size:15px;
+		line-height:20px;
+	}
+	
+	#right ul.buttons li
+	{
+		font-size:16px;
+		line-height:50px;
+	}
+	
+	#right .flip-clock-wrapper ul li a div div.inn
+	{
+		font-size:40px;
+		line-height:50px;
+	}
+}
+
+/* one tile per grid */
+@media all and (max-width: 510px)
+{
+	#header
+	{
+		height:110vw;
+	}
+	
+	#headerWrap
+	{
+		background-size: 170vw auto;
+		background-position: -40vw 0;
+	}
+	
+	#logo
+	{
+		width:90vw;	
+		top:-7vw;
+	}
+	
+	#lead-in
+	{
+		top:30vw;
+		left:10vw;
+		margin:0;
+		height:40vw;	
+		width:50vw;
+	}
+	
+	#header ul.buttons
+	{
+		width:25vw;
+		height:6vw;
+	}
+	
+	#header ul.buttons li
+	{
+		height:7vw;
+	}
+	
+	#ribbon
+	{
+		padding:25px 10vw;
+	}
+	
+	#content
+	{
+		width:100%;
+		margin: 10vw auto;
+	}
+	
+	#content ul
+	{
+		margin:0 10vw;
+	}
+	
+	#grid li.click
+	{
+		width:100% !important;
+		padding-top:100%;
+		margin:2% 0;
+	}
+	
+	#grid li.click .thumb
+	{
+		width:100%;
+	}
+	
+	#grid .cardflip
+	{
+		height:10vw;
+		width:10vw;
+	}
+	
+	#grid .back span ul.buttons
+	{
+		height:7vw;
+	}
+	
+	#grid .back span ul.buttons li
+	{
+		font-size:3vw;
+		line-height:7vw;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#wrapper
+	{
+		padding:0;
+		margin:0 10vw;
+	}
+	
+	#closing
+	{
+		padding:10vw 0;
+	}
+	
+	#right
+	{
+		padding:0 0 10vw 0;
+		height:450px;
+	}
+	
+	#clock
+	{
+		max-height:35vw;
+	}
+	
+	#right ul.buttons
+	{
+		height:170px;
+	}
+	
+	#right ul.buttons li
+	{
+		float:none;
+		margin-bottom:10px;
+		min-width:75px;
+	}
+	
+	#right ul.buttons li:last-child
+	{
+		margin-bottom:0;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:3vw;
+		line-height:7vw;
+	}
+	
+	#ribbon h1
+	{
+		font-size:4.25vw;
+		line-height:5.44vw;
+	}
+	
+	#ribbon h2
+	{
+		font-size:3vw;
+		line-height:3.25vw;
+	}
+	
+	#grid li.click .back span
+	{
+		font-size:3.75vw;
+		line-height:4vw;
+	}
+	
+	#grid li.click .back span.l
+	{
+		font-size:3.0vw;
+		line-height:3.25vw;
+	}
+	
+	#closing h1
+	{
+		font-size:5vw;
+	}
+	
+	#closing h2
+	{
+		font-size:4vw;
+		line-height:4.57vw;
+	}
+
+	#right .flip-clock-wrapper ul li a div div.inn
+	{
+		font-size:5vmin;
+		line-height:9vmin;
+	}
+	
+	#right #clock ul.labels li
+	{
+		font-size:3.5vw;
+		line-height:5vw;
+	}
+	
+	#right ul.buttons li
+	{
+		font-size:2.5vw;
+		line-height:50px;
+	}
+	
+}	

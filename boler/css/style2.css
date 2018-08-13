@@ -1,0 +1,511 @@
+@charset "UTF-8";
+
+body
+{
+	background-color:#ffffff;
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+}
+
+/* HEADER */
+.header-wrapper {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.student img {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	max-width: 1500px;
+}
+
+.header-wrap
+{
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: minmax(400px, 50vw);
+	grid-row-gap: 2em;
+	float:right;
+}
+
+@media screen and (min-width: 1600px) {
+	.header-wrap {
+		grid-template-columns: minmax(400px, 40vw);
+	}
+}
+
+.header-wrap::before {
+    content: "";
+    background-color: rgb(255,255,255,0.6);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    padding-bottom: 15em;
+}
+
+.logo img {
+	max-width: 90%;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.logo p {
+	font-family:'Helvetica Neue Black';
+	color: #00a5b8;
+	font-size: 3.5vw;
+	letter-spacing: -.08rem;
+    line-height: .95em;
+    margin: 1em 1em 0em .5em;
+}
+
+#blue {
+	color: #003662;
+}
+
+ul.buttons {
+	list-style:none;
+	width:90%;
+	height:40px;
+	line-height: 43px;
+}
+
+ul.buttons a {
+	color:inherit;
+	display:block;
+	text-decoration: none;
+}
+
+ul.buttons li {
+	font-family: Gotham Book, sans-serif;
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	height:100%;
+	width: max-content;
+    padding: .2em 2em;
+	max-width: 200px;
+	float:left;
+	margin-right:5%;
+	position:relative;
+	background-color:#00a5b8;
+    box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.75);
+    cursor: pointer;
+}
+
+ul.buttons li:hover {
+	background-color:white;
+	color:#003662;
+}
+
+ul.buttons li:first-child {
+	background-color:#e9b71f;
+	color:#003662;
+}
+
+ul.buttons li:first-child:hover {
+	background-color:white;
+}
+
+ul.buttons li:last-child {
+	background-color:#003662;
+	margin:0 auto;
+}
+
+ul.buttons li:last-child:hover {
+	background-color:white;
+	color:#003662;
+}
+
+.container {
+	float:right;
+	z-index: 1;
+	position: relative;
+	margin: 7em 7em 7em 10em;
+	max-width: 750px;
+}
+
+#ribbon {
+	background-color:#00a5b8;
+	overflow: auto;
+}
+
+#ribbon p {
+	color: white;
+	font-size: 1.2em;
+	padding: 2.5em;
+	line-height: 1.4em;
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1025px) {
+	ul.buttons li {
+		float: none;
+		margin:0 auto;
+		margin-bottom: 1em;
+		width: 15em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.container {
+		max-width: 100%;
+		margin: 2em 0em 5em 0em;
+	}
+	.header-wrap {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		margin: 0 auto;
+		float: none;
+		margin-bottom:4em;
+	}
+
+	.header-wrap::before {
+		display: none;
+	}
+	.student img {
+		position: relative;
+		height:75%;
+		border-bottom: 10px solid #E7AF1C;
+	}
+	.logo {
+		grid-column: 1;
+		margin:0;
+		padding: 0;
+	}
+	.logo img {
+		max-width: 350px;
+		display: block;
+		margin:0 auto;
+	}
+	.logo p {
+		font-size:2em;
+		text-align:center;
+	}
+	ul.buttons {
+		padding-left: 25px;
+	}
+
+}
+
+/* TILES */
+
+.card-wrap {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 350px);
+  	grid-auto-rows: 350px;
+  	justify-content: center;
+  	grid-gap: 2em;
+  	margin: 0 auto;
+  	margin-top: 2em;
+  	margin-bottom: 2em;
+  	width: 90vw;
+  	max-width: 1300px;
+  	z-index: 1;
+  	position: relative;
+}
+
+.cards {
+	background-color: #eeeeee;
+	-webkit-transform:translate3d(0,0,0);
+}
+/*
+.cards:hover::after {
+	content: "test";
+	transition: opacity 0.5s;
+	-webkit-transform:translate3d(0,0,0);
+}
+*/
+.cards img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	-webkit-transform:translate3d(0,0,0);
+}
+/*
+.cards img:hover {
+	display: none;
+	transition: opacity 0.5s;
+	-webkit-transform:translate3d(0,0,0);
+}
+*/
+
+/******************************/
+/* BODY CONTENT / GRID STYLES */
+/******************************/
+
+/*
+#contentwrapper
+{
+	position:relative;
+}
+
+#content
+{
+	background-color:#ffffff;
+	width:100%;
+	height:2500px;
+	position:absolute;
+	margin:0 auto;
+	
+}
+
+#content ul 
+{	
+	list-style:none;
+	padding:0;
+	margin:0 auto;
+}
+
+#grid
+{
+	width:75% !important;
+	height:2000px;
+	margin: auto;
+	position: absolute;
+	top: 0; left:0; bottom: 0; right: 0;
+}
+
+#grid li.click
+{
+	width:32.65% !important;
+	height:400px;
+	float:left;
+	position:relative;
+	cursor:pointer !important;
+	margin:0 1% 1% 0;
+}
+
+#grid li:nth-child(3n) 
+{
+	margin:0 0 1% 0;
+}
+
+#grid .thumb
+{
+    box-shadow: 3px 3px 4px #c5c5c5;
+    display:inline-block;
+    line-height:0;
+	height:auto;
+    width:100%;
+    border-radius:10px;
+    margin-bottom:1rem;
+	position:relative;
+}
+
+#grid .thumb:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.50), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#grid li.click a
+{
+	color:#00a5b8;	
+	text-decoration: none;
+    border-bottom: 1px solid #00a5b8;
+}
+
+#grid li.click .back span
+{
+	position:absolute;	
+	z-index:1;
+	width:90% !important;
+	right:0;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+*/
+
+/* double tile styles */
+
+/*
+#grid li.double .back span ul
+{
+	list-style:square;
+}
+
+#grid li.double .back span ul li
+{
+	margin-left:7%;
+	color:#e9b71f;
+}
+
+#grid li.double .back span ul li a
+{
+	margin-left:-5%;	
+	padding-left:5%;
+	border:none;
+	text-decoration:underline;
+}
+
+/* button in tile */
+/*
+#grid .back span ul.buttons
+{
+	list-style:none;
+	width:100%;
+	height:40px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	margin:0;
+}
+
+#grid .back span ul.buttons a
+{
+	color:inherit;
+	display:block;
+}
+
+#grid .back span ul.buttons li
+{
+	height:100%;
+	width:40%;
+	background-color:#00a5b8;
+	position:relative;
+	margin:0 auto;
+	transition:box-shadow 200ms ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+#grid .back span ul.buttons li:hover
+{
+	bottom:1px;
+	right:1px;
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+/* animation */
+/*
+.click .front, .click .back
+{
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+.click .back
+{
+	-webkit-transform: rotateY(-180deg);
+    		transform: rotateY(-180deg);
+}
+
+/* click effect */
+/*
+.click.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.click.flipped .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+
+/* TYPE STYLES */
+
+
+@font-face 
+{
+    font-family:'Helvetica Neue';
+	src:url(../fonts/HelveticaNeue.ttf);
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Black';
+	src:url(../fonts/Helvetica-95Black.ttf);	
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Thin';
+	src:url(../fonts/HelveticaNeue-Thin.ttf);
+}
+
+@font-face 
+{
+    font-family:'Absara OT Bold';
+	src:url(../fonts/AbsaraOT-Bold.otf);
+}
+
+@font-face
+{
+	font-family:"Akzidenz Grotesk Bold";
+	src: url(../fonts/Akzidenz-Grotesk-Bold.ttf);
+}
+
+@font-face
+{
+	font-family:"Gotham Book";
+	src:url(../fonts/GothamBook.ttf);
+}
+
+
+
+
+/* FOOTER */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#outer-footer-wrapper {
+    width: 100%;
+    background-color:#f0cb69;
+    margin: 0;
+}
+#footer-left > ul {
+	padding:0;
+}
+
+#footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 75vw;
+    margin:0 auto;
+    background-color:#f0cb69;
+}
+
+#footer-left, #footer-right {
+    flex: 1 1 0;
+    padding: 1rem;
+    min-width: 285px;
+    margin-bottom:3em;
+}
+
+#footer-left h1 {
+    font-family: 'Helvetica Neue Black';
+    color:#0a3f67;
+    font-size: 1.7em;
+}
+
+#footer-left h2 {
+    font-family: 'Helvetica Neue';
+    color:#0a3f67;
+    font-size: 1em;
+}

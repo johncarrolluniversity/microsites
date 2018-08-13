@@ -1,0 +1,17 @@
+<script language="javascript" >
+
+
+var userAgent = navigator["userAgent"]["toLowerCase"]();
+var html5keys = ["iphone","ipad","ipod","symbianos","ios","android"] ;
+var isHTML5 = false ;
+for(var i=0;i<html5keys.length ;i++)
+{
+    if (userAgent["indexOf"](html5keys[i])>0)
+        isHTML5 = true ;
+}
+
+if (isHTML5)
+    location.href = "HTML5/index.html" ;
+else
+    location.href = "FLASH/index.html" ;
+</script>

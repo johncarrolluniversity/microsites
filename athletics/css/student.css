@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+/******************************/
+/*	JCU Students              */
+/*							  */
+/*	2016, Alyssa Myers        */
+/*	www.alyssanmyers.com      */
+/******************************/
+
+html 
+{
+    position: relative;
+    min-height: 100%;
+}
+
+body
+{
+	padding:0;
+	margin:0;
+	background-color:#e5e5e5;
+	overflow-x:hidden;
+}
+
+#container
+{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+/*****************/
+/* HEADER STYLES */
+/*****************/
+
+#logo
+{
+	height:125px;
+	width:100%;
+	position:relative;
+	background-color:#ffffff;
+}
+
+#logo img
+{
+	height:80%;
+	position:absolute;
+	left:50px;
+}
+
+#header
+{
+	position:relative;
+	width:100%;
+	height:auto;
+	padding:0;
+	margin:0;
+}
+
+#header img
+{
+	width:100%;
+}
+
+#ribbon
+{	
+	margin-top:-5px;
+	width:100%;
+	height:35vw;
+}
+
+#ribbon.kody
+{
+	background:url(../images/Kody_Quote.png) no-repeat center #00a5b8;
+	background-size:contain;
+}
+
+#ribbon.meghan
+{
+	background:url(../images/Meghan_Quote.png) no-repeat center #00a5b8;
+	background-size:contain;
+}
+
+#ribbon.liz
+{
+	background:url(../images/Liz_Quote.png) no-repeat center #00a5b8;
+	background-size:contain;
+}
+
+#ribbon.ross
+{
+	background:url(../images/Ross_Quote.png) no-repeat center #00a5b8;
+	background-size:contain;
+}
+
+#content
+{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+#bodyCopy
+{
+	height:auto;
+	width:65%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#body
+{
+	width:100%;
+	text-align:left;
+}
+
+.bar
+{
+	clear:both;
+	height:50px;
+	width:100%;
+	background-color:#00a5b8;
+}
+
+#intro
+{
+	font-family:"Helvetica Neue 66 Medium Italic";
+	color:#008899;
+	font-size:21px;
+	line-height:24px;
+}
+
+#body h1:first-child
+{
+	margin-top:35px;
+}
+
+#body h2:last-child
+{
+	padding-bottom:50px;
+}
+
+#body h1
+{
+	margin-top:20px;
+	font-family:"Helvetica Neue 66 Medium Italic";
+	margin-bottom:-15px;
+	color:#008899;
+	font-weight:bold;
+	font-size:21px;
+	line-height:24px;
+}
+
+#body h2
+{
+	font-family:"Helvetica Neue Thin";
+	margin-bottom:35px;
+	color:#4b5554;	
+	font-size:1em;
+	line-height:24px;
+	letter-spacing:0.5px;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media all and (max-width: 915px)
+{	
+	#logo
+	{
+		height:75px;
+	}
+	
+	#logo img
+	{
+		left:5%;
+	}
+}
+
+@media all and (max-width: 700px)
+{
+	#ribbon.kody
+	{
+		background:url(../images/Kody_Quote_Smaller.png) no-repeat center #00a5b8;
+		background-size:contain;
+		height:50vw;
+	}
+	
+	#ribbon.meghan
+	{
+		background:url(../images/Meghan_Quote_Smaller.png) no-repeat center #00a5b8;
+		background-size:contain;
+		height:50vw;
+	}
+	
+	#ribbon.liz
+	{
+		background:url(../images/Liz_Quote_Smaller.png) no-repeat center #00a5b8;
+		background-size:contain;
+		height:50vw;
+	}
+	
+	#ribbon.ross
+	{
+		background:url(../images/Ross_Quote_Smaller.png) no-repeat center #00a5b8;
+		background-size:contain;
+		height:50vw;
+	}
+}
+
+@media all and (max-width: 510px)
+{
+	#logo
+	{
+		height:15vw;
+	}
+	
+	#logo img
+	{
+		left:5vw;
+	}
+}
+
+
+
+/* NEW FOOTER RACHEL */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* footer styles */
+
+#outer-footer-wrapper {
+    width: 100%;
+    background-color:#f0cb69;
+    margin: 0;
+}
+
+#footer-wrapper {
+    width: 100vw;
+    max-width: 50em;
+    margin:0 auto;
+    background-color:#f0cb69;
+}
+
+#footer-left, #footer-right {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+#footer-left h1 {
+    font-family: 'Helvetica Neue Black';
+    color:#0a3f67;
+    font-size: 1.5em;
+}
+
+#footer-left h2 {
+    font-family: 'Helvetica Neue';
+    color:#0a3f67;
+    font-size: .9em;
+}
+
+@media (min-width: 48em) {
+
+    #footer-wrapper {
+        display: table;
+        margin: 0 auto;
+        width: 95vw;
+        vertical-align: top;
+    }
+
+    #footer-left, #footer-right {
+        display: table-cell;
+        padding: 1rem;
+        vertical-align: top;
+    }
+
+    #footer-right {
+        width: 50%;
+        height: 3rem;
+    }
+
+    #footer-left {
+        width: 50%;
+        height: 3rem;
+        padding-bottom: 1rem;
+        vertical-align: top;
+    }
+}
+
+/* buttons */
+
+.footer-buttons{
+    list-style:none;
+    width:100%;
+    height:40px;
+    padding:0;
+    margin:25px 0 0 0;
+    text-align: center;
+    color: #FFF;
+    line-height:40px;
+}
+
+ul.footer-buttons li{
+    height:100%;
+    max-height:40px;
+    min-width:100px;
+    width:30%;
+    float:left;
+    position:relative;
+    transition:box-shadow 200ms ease-out;
+    box-shadow:1px 1px 1px 1px rgba(10, 10, 10, 0.75), 2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+    margin-right:5%;
+    background-color:#00a5b8;
+}
+
+ul.footer-buttons li:first-child{
+    background-color:#e9b71f;
+    color:#000000;
+}
+
+ul.footer-buttons li:last-child{
+    background-color:#003662;
+    margin:0;
+}
+
+.footer-buttons li:hover{
+    bottom:1px;
+    right:1px;
+    box-shadow:2px 2px 1px 1px rgba(10, 10, 10, 0.75), 2px 2px 1px 0px rgba(255,255,255,0.35) inset;
+}
+
+.footer-buttons a{
+    font-family:'Absara OT Bold';
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-buttons a:visited{
+    font-family:'Absara OT Bold';
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Form Styles */
+
+
+.form_label{
+    font-family: 'Helvetica Neue';
+    font-size: .9em;
+    color: #0a3f67;
+}
+
+.form_question{
+    font-size: 1em;
+}
+
+.form_pages{
+
+    font-family: 'Helvetica Neue';
+    font-size: .9em;
+    color: #0a3f67;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;}
+
+.form_responses {
+    padding-bottom: 5px;
+    height: 25px;
+}
+
+/* term of entry */
+
+#form_question_d8fb8926-e330-476f-84fa-7bfc4df999d6{
+    width:60%;
+    font-size: .85em;
+}
+
+/* birthdate */
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_m{
+    width:90px;
+    font-size: .85em;
+}
+
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_d{
+    width:55px;
+    font-size: .85em;
+}
+
+#form_36d8d03f-273a-4a58-b1da-40b7af664d6d_y{
+    width:65px;
+    font-size: .85em;
+}
+
+/* academic interests */
+#form_60da47ab-f08a-4a97-a5d6-7d9cb7066190{
+    float: left;
+}
+
+/* button */
+.action button {
+    float: left;
+    padding: 5px;
+    border: 1px solid #003662;
+    color: #003662;
+    width: 75px;
+    text-align: center;
+    font-size: .9em;
+}
+
+/* field heights */
+input[type="email"]{
+    height: 30px;
+}
+
+input[type="text"]{
+    height: 30px;
+}
+
+
+/***************/
+/* TYPE STYLES */
+/***************/
+
+@font-face 
+{
+    font-family:'Helvetica Neue';
+	src:url(../fonts/HelveticaNeue.ttf);
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue 66 Medium Italic';
+	src:url(../fonts/Helvetica-Neue-66Medium-Italic.ttf);
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Thin';
+	src:url(../fonts/HelveticaNeue-Thin.ttf);
+}
+
+@font-face
+{
+	font-family:"Gotham Bold";
+	src:url(../fonts/GothamBold.ttf);
+}
+
+@font-face 
+{
+    font-family:'Absara OT Bold';
+	src:url(../fonts/AbsaraOT-Bold.otf);
+}
+
+@font-face
+{
+	font-family:'Helvetica Neue Black';
+	src:url(../fonts/Helvetica-95Black.ttf);	
+}

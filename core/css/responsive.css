@@ -1,0 +1,541 @@
+@charset "UTF-8";
+
+/******************************/
+/*	Boler School of Business  */
+/*							  */
+/*	2016, Alyssa Myers        */
+/*	www.alyssanmyers.com      */
+/******************************/
+
+@media all and (max-width: 1215px) 
+{	
+	/* HEADER STYLES */
+	
+	#header
+	{
+		height:600px;
+	}
+	
+	#headerWrap
+	{
+		background-size:1000px auto;
+		background-position: 250px bottom;
+		width:975px;
+	}
+	
+	#logo
+	{
+		width:600px;
+		position:absolute;
+		top:0; left:0;
+	}
+	
+	#lead-in
+	{
+		width:320px;
+		height:330px;
+		top:0; left:0;
+	}
+	
+	#header ul
+	{
+		width:200px;
+		height:30px;
+		bottom:0;
+		left:0;
+	}
+	
+	#header ul.buttons li
+	{
+		height:100%;
+		background-size:contain;
+		float:left;
+	}
+	
+	/* BODY COPY STYLES */
+	
+	#ribbon
+	{
+		height:300px;
+	}
+	
+	#ribbon .wrap
+	{
+		width:auto;
+		height:80%;
+		margin-left:110px;
+		top:0; left:0; right:5%;
+	}
+
+	/* GRID STYLES */
+	
+	#grid .back span ul.buttons
+	{
+		height:3vw;
+	}
+	
+	#grid .back span ul.buttons li
+	{
+		font-size:1vw;
+		line-height:3vw;
+	}
+	/* FOOTER STYLES */
+	
+	#countdown
+	{
+		width:1000px;	
+		position:absolute;
+		top:0; bottom:0;
+	}
+	
+	#closing
+	{
+		width:355px;
+	}
+	
+	#right
+	{
+		width:475px;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:16px;
+	}
+	
+	#ribbon h1
+	{
+		font-size:22px;
+		line-height:29px;
+	}
+	
+	#grid li.click .back span
+	{
+		//font-size:1.5vw;
+		//line-height:2.5vw;
+	}
+	
+	#closing h1
+	{
+		font-size:24px;
+	}
+	
+	#closing h2
+	{
+		font-size:22px;
+		line-height:26px;
+	}
+	
+	#right h1
+	{
+		font-size:24px;
+	}
+}
+/* two column grid and begins stacking footer*/
+@media all and (max-width: 1015px) 
+{	
+	#headerWrap
+	{
+		width:100%;
+	}
+	
+	#ribbon
+	{
+		height:350px;
+	}
+	
+	/* GRID STYLES */
+	
+	#grid
+	{
+		width:750px;
+	}
+	
+	#grid li.click
+	{
+		width:49.5% !important;
+	}
+	
+	#grid li:nth-child(3n) {
+    	margin:0 1% 1% 0;
+	}
+	
+	#grid li:nth-child(2n) 
+	{
+		margin:0 0 1% 0;
+	}
+	
+	#grid li.click .back span
+	{
+		font-size:1.9vw;
+		line-height:2.25vw;
+	}
+	
+	#grid .back span ul.buttons
+	{
+		height:5vw;
+	}
+	
+	#grid .back span ul.buttons li
+	{
+		font-size:2vw;
+		line-height:5vw;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#footer
+	{
+		height:	825px;
+	}
+	
+	#wrapper
+	{
+		height:	700px;
+	}
+	
+	#countdown
+	{
+		width:525px;
+		height:550px;
+		position:absolute;
+		top:0; bottom:0;
+	}
+	
+	#closing, #right
+	{
+		width:100%;
+		float:left;
+		margin:0;
+	}
+	
+	#closing
+	{
+		bottom:auto;
+		height:auto;
+	}
+	
+	#right
+	{
+		top:auto;
+		height:300px;
+	}
+}
+
+/* moves girl down */
+@media all and (max-width: 790px)
+{
+	/* HEADER STYLES */
+	
+	#header
+	{
+		height:700px;
+	}
+	
+	#headerWrap
+	{
+		background-size:1000px auto;
+		background-position: 25px bottom;
+		width:675px;
+	}
+	
+	#logo
+	{
+		width:500px;
+		left:-20px;
+	}
+	
+	#lead-in
+	{
+		width:235px;
+		height:235px;
+		top:-25px; 
+		left:-40px;
+	}
+	
+	#header ul.buttons
+	{
+		width:200px;
+		height:30px;
+		bottom:0;
+		left:0;
+	}
+	
+	#header ul.buttons li
+	{
+		height:100%;
+		background-size:contain;
+		float:left;
+	}
+	
+	/* BODY COPY STYLES */
+	
+	#ribbon
+	{
+		height:350px;
+		margin:0;
+		position:relative;
+	}
+	
+	#ribbon .wrap
+	{
+		height:80%;
+		width:85%;
+		margin-left:70px;
+	}
+	
+	/* GRID STYLES */
+			
+	#grid
+	{
+		width:90vw;
+	}
+	
+	#grid li.click
+	{
+		height:50vw;
+	}
+	
+	#grid li.click .back span
+	{
+		width:90%;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#countdown
+	{
+		width:400px;
+		height:525px;
+	}
+	
+	#right
+	{
+		height:250px;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:16px;
+		line-height:30px;
+	}
+	
+	#ribbon h1
+	{
+		font-size:20px;
+		line-height:25.6px;
+	}
+
+	#closing h1
+	{
+		font-size:20px;
+	}
+	
+	#closing h2
+	{
+		font-size:20px;	
+	}
+	
+	#right h1
+	{
+		font-size:20px;
+		line-height:20px;
+	}
+	
+	#right .flip-clock-wrapper ul li a div div.inn
+	{
+		font-size:20px;
+		line-height:40px;
+	}
+	
+	#right #clock ul.labels li
+	{
+		font-size:15px;
+		line-height:20px;
+	}
+	
+	#right ul.buttons li
+	{
+		font-size:16px;
+		line-height:50px;
+	}
+}
+
+@media all and (max-width: 700px)
+{
+	#headerWrap
+	{
+		width:100%;
+	}
+}
+
+/* one tile per grid */
+@media all and (max-width: 510px)
+{
+	#header
+	{
+		height:110vw;
+	}
+	
+	#headerWrap
+	{
+		width:100%;
+		background-size: 150vw auto;
+		background-position: 20vw bottom;
+	}
+	
+	#logo
+	{
+		width:90vw;	
+		top:-7vw;
+	}
+	
+	#lead-in
+	{
+		top:30vw;
+		left:12vw;
+		margin:0;
+		height:50vw;	
+		width:50vw;
+	}
+	
+	#header ul.buttons
+	{
+		width:40vw;
+		height:6vw;
+	}
+	
+	#ribbon
+	{
+		height:100vw;
+	}
+	
+	#ribbon .wrap
+	{
+		height:75%;
+		width:75%;		
+		margin:auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	
+	#content
+	{
+		width:100%;
+	}
+	
+	#grid
+	{
+		width:90vw;
+	}
+	
+	#grid li.click
+	{
+		width:100% !important;
+		height:100vw;
+		margin-bottom:5% !important;
+	}
+	
+	#grid li.click img
+	{
+		width:100%;
+	}
+	
+	#grid li.click .back span
+	{
+		width: 90% !important;
+	}
+	
+	/* FOOTER STYLES */
+	
+	#footer
+	{
+		height:200vw;	
+	}
+	
+	#wrapper
+	{
+		height:175vw;
+	}
+	
+	#countdown
+	{
+		width:85vw;
+		height:150vw;
+	}
+	
+	#closing
+	{
+		height:50%;	
+	}
+	
+	#right
+	{
+		height:40%;
+	}
+	
+	/* TYPE STYLES */
+	
+	#header li
+	{
+		font-size:3vw;
+		line-height:7vw;
+	}
+	
+	#ribbon h1
+	{
+		font-size:4.25vw;
+		line-height:5.44vw;
+	}
+	
+	#ribbon h2
+	{
+		font-size:3vw;
+		line-height:3.25vw;
+	}
+	
+	#grid li.click .back span
+	{
+		font-size:4vw;
+		line-height:4.35vw;
+	}
+	
+	#closing h1
+	{
+		font-size:5vw;
+	}
+	
+	#closing h2
+	{
+		font-size:5.5vw;
+		line-height:7.36vw;
+	}
+	
+	#right h1
+	{
+		font-size:4vw;
+		line-height:5vw;	
+	}
+	
+	#right .flip-clock-wrapper ul li a div div.inn
+	{
+		font-size:5vw;
+		line-height:10vw;
+	}
+	
+	#right #clock ul.labels li
+	{
+		font-size:3.5vw;
+		line-height:5vw;
+	}
+	
+	#right ul.buttons li
+	{
+		font-size:4vw;
+		line-height:12vw;
+	}
+	
+}	
