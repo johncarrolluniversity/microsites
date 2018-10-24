@@ -45,7 +45,7 @@
         <div>
 
         </div>
-            
+
             <div class="logo">
                 <img srcset="images/BolerWebwCOB.png 1152w,
                              images/BolerHorizontalLockup.png 1952w"
@@ -56,7 +56,7 @@
             </div>
 
 
-                
+
             <ul class="buttons">
                 <li><a href="#form" onClick="ga('send', 'event', 'Link', 'Click', 'Boler: Get info button');">request info</a>
                 </li>
@@ -81,24 +81,59 @@
 </div>
 
 <div class="card-wrap">
-	
+
 	<div class="cards">
-        <img src="images/tiles/3.png" class="thumb" id="desc1" onmouseover="changeContent('desc1')" value="testing" alt="Skills that matter">
+      <div class="card-front">
+        <img src="images/tiles/3.png" alt="Skills that matter">
+      </div>
+      <div class="card-back">
+        <p>back content</p>
+      </div>
 	</div>
 
 	<div class="cards">
+    <div class="card-front">
+      <img src="images/tiles/3.png" alt="Skills that matter">
+    </div>
+    <div class="card-back">
+      <p>back content</p>
+    </div>
 	</div>
 
 	<div class="cards">
+    <div class="card-front">
+      <img src="images/tiles/3.png" alt="Skills that matter">
+    </div>
+    <div class="card-back">
+      <p>back content</p>
+    </div>
 	</div>
 
     <div class="cards">
+      <div class="card-front">
+        <img src="images/tiles/3.png" alt="Skills that matter">
+      </div>
+      <div class="card-back" style="background: #eee;">
+        <p>back content</p>
+      </div>
     </div>
 
     <div class="cards">
+      <div class="card-front">
+        <img src="images/tiles/3.png" alt="Skills that matter">
+      </div>
+      <div class="card-back">
+        <p>back content</p>
+      </div>
     </div>
 
     <div class="cards">
+      <div class="card-front">
+        <img src="images/tiles/3.png" alt="Skills that matter">
+      </div>
+      <div class="card-back">
+        <p>back content</p>
+      </div>
     </div>
 
 </div>
@@ -389,7 +424,7 @@
 
 <div id="outer-footer-wrapper">
 <div id="footer-wrapper">
-        
+
         <div id="footer-left">
             <h1>A Jesuit education will change your life.</h1>
             <h2 style="line-height: 1.5; padding-right: 30px;">John Carroll University will show you how to use your passions to change the world. You'll be educated as a whole person - in mind, body, and spirit - and will leave here ready to act, innovate, and lead with confidence and heart.</h2>
@@ -402,7 +437,7 @@
             </ul>
 
         </div>
-            
+
             <div id="footer-right">
 
                 <div id="form">

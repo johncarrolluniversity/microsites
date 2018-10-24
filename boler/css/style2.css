@@ -209,24 +209,55 @@ ul.buttons li:last-child:hover {
   	max-width: 1300px;
   	z-index: 1;
   	position: relative;
-}
-
-.cards {
-	background-color: #eeeeee;
-	-webkit-transform:translate3d(0,0,0);
+		perspective: 1000px;
 }
 /*
-.cards:hover::after {
-	content: "test";
-	transition: opacity 0.5s;
-	-webkit-transform:translate3d(0,0,0);
+.card-back {
+	background-color: #eeeeee;
 }
 */
+	/* flip the pane when hovered */
+	.cards:hover {
+		transform: rotateY(180deg);
+	}
+
+/*.card-wrap, .card-front, .card-back {
+	width: 320px;
+	height: 480px;
+}
+*/
+
+/* flip speed goes here */
+.cards {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.card-front, .card-back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.card-front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.card-back {
+	transform: rotateY(180deg);
+}
+
 .cards img {
 	width:100%;
 	height:100%;
 	object-fit: cover;
-	-webkit-transform:translate3d(0,0,0);
 }
 /*
 .cards img:hover {
@@ -253,11 +284,11 @@ ul.buttons li:last-child:hover {
 	height:2500px;
 	position:absolute;
 	margin:0 auto;
-	
+
 }
 
-#content ul 
-{	
+#content ul
+{
 	list-style:none;
 	padding:0;
 	margin:0 auto;
@@ -282,7 +313,7 @@ ul.buttons li:last-child:hover {
 	margin:0 1% 1% 0;
 }
 
-#grid li:nth-child(3n) 
+#grid li:nth-child(3n)
 {
 	margin:0 0 1% 0;
 }
@@ -303,20 +334,20 @@ ul.buttons li:last-child:hover {
 {
 	bottom:1px;
 	right:1px;
-	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.50), 
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.50),
 				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
 }
 
 #grid li.click a
 {
-	color:#00a5b8;	
+	color:#00a5b8;
 	text-decoration: none;
     border-bottom: 1px solid #00a5b8;
 }
 
 #grid li.click .back span
 {
-	position:absolute;	
+	position:absolute;
 	z-index:1;
 	width:90% !important;
 	right:0;
@@ -343,7 +374,7 @@ ul.buttons li:last-child:hover {
 
 #grid li.double .back span ul li a
 {
-	margin-left:-5%;	
+	margin-left:-5%;
 	padding-left:5%;
 	border:none;
 	text-decoration:underline;
@@ -376,7 +407,7 @@ ul.buttons li:last-child:hover {
 	position:relative;
 	margin:0 auto;
 	transition:box-shadow 200ms ease-out;
-    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75), 
+    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.75),
 				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
 }
 
@@ -384,7 +415,7 @@ ul.buttons li:last-child:hover {
 {
 	bottom:1px;
 	right:1px;
-	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75), 
+	box-shadow: 2px 2px 1px 1px rgba(10, 10, 10, 0.75),
 				2px 2px 1px 0px rgba(255,255,255,0.35) inset;
 }
 
@@ -425,7 +456,7 @@ ul.buttons li:last-child:hover {
 /* TYPE STYLES */
 
 
-@font-face 
+@font-face
 {
     font-family:'Helvetica Neue';
 	src:url(../fonts/HelveticaNeue.ttf);
@@ -434,7 +465,7 @@ ul.buttons li:last-child:hover {
 @font-face
 {
 	font-family:'Helvetica Neue Black';
-	src:url(../fonts/Helvetica-95Black.ttf);	
+	src:url(../fonts/Helvetica-95Black.ttf);
 }
 
 @font-face
@@ -443,7 +474,7 @@ ul.buttons li:last-child:hover {
 	src:url(../fonts/HelveticaNeue-Thin.ttf);
 }
 
-@font-face 
+@font-face
 {
     font-family:'Absara OT Bold';
 	src:url(../fonts/AbsaraOT-Bold.otf);
